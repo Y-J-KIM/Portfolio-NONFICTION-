@@ -1,3 +1,61 @@
+
+head {
+    color: white;
+}
+
 body {
-    color: darkkhaki;
+    color: lightgray;
+    font-family: "Gowun Batang";
+}
+
+footer {
+    color: white;
+    font-family: "Gowun Batang";
+}
+
+ul {
+    list-style-type: none; /* 목록 기호 제거 */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block; /* 항목을 가로로 나란히 배치 */
+    margin-right: 100px; /* 각 항목 사이 간격 설정 */
+    margin-bottom: 50px;
+   
+}
+
+a[href="#"] {
+    text-decoration: none; /* 텍스트 밑줄 없애기 */
+    color: black; /* 링크 색상 지정 (선택적) */
+}
+
+a:hover {
+color: lightgray;
+}
+.icon {
+    display: inline-block;
+    width: 75px; /* 아이콘의 너비 지정 (선택적) */
+    height: 75px; /* 아이콘의 높이 지정 (선택적) */
+    margin: 5px; /* 아이콘과 텍스트 사이 간격 (선택적) */
+}
+
+.box {
+    width: 20%;
+            float:left; /* 박스를 가로로 나란히 배치하기 위해 float 사용 */
+            box-sizing: border-box;
+            padding: 20px;
+            border: 1px none #ccc;
+            margin: 10px;
+            
+}
+
+.box h4 {
+    color: rgb(46, 45, 45);
+    
+}
+
+.box p {
+    color: black;
 }

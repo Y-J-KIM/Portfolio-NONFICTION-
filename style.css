@@ -61,51 +61,55 @@ footer {
 .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   position: relative;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
-.container div {
-  width: 1800px;
-  margin: auto;
+.photo {
+    display: flex;
+    align-items: center;
 }
 
-.container div img {
-  width: 400px;
-  height: 400px;
-  margin: 10px;
+.container img {
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
 }
 
-.container p {
+/* .container p {
   margin: 10px; /* 이미지와 설명 사이의 간격 조정 */
-}
+} */
 
-a[href="#"] {
+/* a[href="#"] {
   text-decoration: none;
   color: black;
-}
+} */
 
-.box {
+.text {
   width: 20%;
-  float: left;
+  display: inline-block;
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 20px;
   border: 1px none #ccc;
   margin: 10px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
-.box h4 {
+.text h4 {
   color: rgb(46, 45, 45);
 }
 
-.box p {
+.text p {
   position: relative;
   color: rgb(73, 72, 72);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
-.box p img::before {
-  float: left;
+.text p img::before {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -121,8 +125,20 @@ a[href="#"] {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 789px) and (max-width: 1719px) {
+/* @media screen and (min-width: 789px) and (max-width: 1199px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+  }
 }
 
-@media screen and (min-width: 1720px) {
-}
+@media screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 33%;
+  }
+} */

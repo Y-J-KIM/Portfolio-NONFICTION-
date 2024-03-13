@@ -11,7 +11,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 15% 30px;
+  padding: 35px 10% 30px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -29,9 +29,9 @@ header {
 }
 
 .navbar {
-  width: 1400px;
+  width: 1300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .navbar a {
@@ -60,31 +60,28 @@ footer {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  /* margin-left: 50px; */
+  text-align:center ;
+}
+.image-container {
+  display: flex;
+  justify-content: center;  
+}
+.image-container img {
+  margin: 10px 35px 5px;
+  width: 400x;
+  height: 400px;
 }
 
-.photo {
-    display: flex;
-    align-items: center;
+.text-container {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
 }
-
-.container img {
-  width: 300px;
-  height: 300px;
-  margin-right: 10px;
+.text-container p {
+  flex: 1;
 }
-
-/* .container p {
-  margin: 10px; /* 이미지와 설명 사이의 간격 조정 */
-} */
-
-/* a[href="#"] {
-  text-decoration: none;
-  color: black;
-} */
 
 .text {
   width: 20%;

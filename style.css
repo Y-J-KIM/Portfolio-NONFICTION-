@@ -1,74 +1,128 @@
-
-head {
-    color: white;
-}
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
 body {
-    color: lightgray;
-    font-family: "Gowun Batang";
+  background-color: rgb(255, 248, 248);
+  font-family: "Gowun Batang";
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 15% 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* z-index: 100%; */
+}
+
+.icon {
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 65px;
+  height: 65px;
+  margin: 10px;
+}
+
+.navbar {
+  width: 1500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: lightgrey;
+}
+
+.navbar a.active {
+  color: pink;
 }
 
 footer {
-    color: white;
-    font-family: "Gowun Batang";
+  background-color: rgb(255, 255, 255);
+  font-family: "Noto Sans KR", sans-serif;
+  border-top: 1px solid lightgray;
+  overflow: hidden;
 }
 
-#container {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 10px;
-   
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 50px;
 }
 
-#container div {
-    width: 1800px;
-    margin: auto;
+.container div {
+  width: 1800px;
+  margin: auto;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.container div img {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
 }
 
-li {
-    display: inline-block; 
-    margin-right: 100px; 
-    margin-bottom: 50px;
-   
+.container p {
+  margin: 10px; /* 이미지와 설명 사이의 간격 조정 */
 }
 
 a[href="#"] {
-    text-decoration: none;
-    color: black; 
-}
-
-a:hover {
-color: lightgray;
-}
-.icon {
-    display: inline-block;
-    width: 75px; 
-    height: 75px; 
-    margin: 5px; 
+  text-decoration: none;
+  color: black;
 }
 
 .box {
-    width: 20%;
-            float:left; 
-            box-sizing: border-box;
-            padding: 20px;
-            border: 1px none #ccc;
-            margin: 10px;
-            
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px none #ccc;
+  margin: 10px;
+  font-size: 15px;
 }
 
 .box h4 {
-    color: rgb(46, 45, 45);
-    
+  color: rgb(46, 45, 45);
 }
 
 .box p {
-    color: black;
+  position: relative;
+  color: rgb(73, 72, 72);
+}
+
+.box p img::before {
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bx-icon {
+  bottom: 40px;
+  width: 150px;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 789px) and (max-width: 1719px) {
+}
+
+@media screen and (min-width: 1720px) {
 }

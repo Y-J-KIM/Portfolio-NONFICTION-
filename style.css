@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(255, 248, 248);
   font-family: "Gowun Batang";
+  overflow: hidden;
 }
 
 header {
@@ -11,7 +18,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 35px 10% 30px;
+  padding: 35px 10% 18px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -22,21 +29,20 @@ header {
 .icon {
   display: inline-block;
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
   width: 80px;
   height: 80px;
-  margin: 10px;
+  margin: 5px 0 5px 5px;
 }
 
 .navbar {
-  width: 1200px;
+  width: 1700px;
   display: flex;
   justify-content: space-between;
 }
 
 .navbar a {
-  /* margin-left: 70px; */
   font-size: 18px;
   color: black;
   text-decoration: none;
@@ -44,12 +50,9 @@ header {
   transition: 0.3s;
 }
 
-.menu {
-  margin-left: 70px;
-}
-
 .menu a {
-  display: flex;
+  margin-left: 70px;
+  display: inline-block;
   justify-content: space-between;
 }
 
@@ -91,7 +94,7 @@ footer {
   justify-content: space-between;
   width: 100%;
   margin-left: 70px;
-  top: calc(84%);
+  top: calc(88%);
   line-height: 1.35;
 }
 
@@ -116,6 +119,10 @@ footer {
   color: rgb(73, 72, 72);
 }
 
+ul {
+  list-style-type: none;
+}
+
 .text1 h4 {
   color: rgb(46, 45, 45);
 }
@@ -127,8 +134,7 @@ footer {
 }
 
 .bx-icon {
-  bottom: 40px;
-  width: 150px;
+  width: 160px;
   height: 30px;
   margin: 5px;
   padding: 5px;
@@ -137,34 +143,6 @@ footer {
 }
 
 @media screen and (max-width: 981px) {
-  /* header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 35px 10% 30px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
-  }
-
-  .navbar {
-    width: 980px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .navbar a {
-    margin-left: 70px;
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-  } */
-
   #container {
     display: flex;
     flex-direction: row;

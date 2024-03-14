@@ -10,7 +10,7 @@
 body {
   background-color: rgb(255, 248, 248);
   font-family: "Gowun Batang";
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -170,7 +170,7 @@ ul {
     justify-content: space-between;
     width: 100%;
     margin-left: 70px;
-    top: calc(78%);
+    top: calc(85%);
     font-size: 15px;
     line-height: 1.35;
   }
@@ -190,6 +190,10 @@ ul {
   .text2,
   .text3,
   .text4 {
+    display: none;
+  }
+
+  .bx-icon {
     display: none;
   }
 }

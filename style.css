@@ -102,6 +102,11 @@ footer {
   flex: 1;
 }
 
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+
 .text1,
 .text2,
 .text3,
@@ -145,7 +150,7 @@ ul {
 @media screen and (max-width: 412px) {
     
   header {
-    padding: 35px 10% 30px;
+    padding: 35px 10% 60px;
   }
 
   #container {
@@ -175,7 +180,7 @@ ul {
     justify-content: space-between;
     width: 100%;
     margin-left: 70px;
-    top: calc(85%);
+    top: calc(87%);
     font-size: 15px;
     line-height: 1.35;
   }
@@ -210,5 +215,13 @@ ul {
     width: 80px;
     height: 80px;
     margin: 5px 0 5px 5px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .img img {
+    max-width: 100%;
   }
 }

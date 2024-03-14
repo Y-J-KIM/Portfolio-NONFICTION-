@@ -16,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 5;
 }
 
 .icon {
@@ -58,32 +59,41 @@ footer {
   overflow: hidden;
 }
 
-.container {
+#container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align:center ;
 }
+
 .image-container {
+  position: relative;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 .image-container img {
-  margin: 10px 35px 5px;
+  margin: 10px 35px 70px;
   width: 400x;
   height: 400px;
 }
 
 .text-container {
+  position: absolute;
   display: flex;
-  justify-content: space-between; 
-  width: 100%; 
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 70px;
+  top: calc(84%);
+  line-height: 1.35;
 }
+
 .text-container p {
   flex: 1;
 }
 
-.text {
+.text1,
+.text2,
+.text3,
+.text4 {
   width: 20%;
   display: inline-block;
   justify-content: space-between;
@@ -92,6 +102,7 @@ footer {
   border: 1px none #ccc;
   margin: 10px;
   font-size: 13px;
+  vertical-align: top;
 }
 
 .text h4 {
@@ -122,20 +133,54 @@ footer {
   justify-content: space-between;
 }
 
-/* @media screen and (min-width: 789px) and (max-width: 1199px) {
-  .container {
+@media screen and (max-width: 981px) {
+  #container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container img {
+    margin: 10px 35px 70px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .text-container {
+    position: absolute;
+    display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
+    margin-left: 70px;
+    top: calc(78%);
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .text1 {
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px none #ccc;
+    margin: 10px;
+    font-size: 13px;
+    vertical-align: top;
+  }
+
+  .text2,
+  .text3,
+  .text4 {
+    display: none;
   }
 }
-
-@media screen and (min-width: 1200px) {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 33%;
-  }
-} */

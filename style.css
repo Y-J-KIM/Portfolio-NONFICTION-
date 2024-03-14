@@ -30,7 +30,7 @@ header {
 }
 
 .navbar {
-  width: 0 auto;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 }
@@ -46,6 +46,11 @@ header {
 
 .menu {
   margin-left: 70px;
+}
+
+.menu a {
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar a:hover {
